@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nombre de la Página – MQT 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="header-container"></div>
+
+  <main class="page-content">
+    <div class="container">
+      
+      <div class="page-header fade-in">
+        <div class="section-label">MQT 2026</div>
+        <h1 class="page-title">Program</h1>
+      </div>
+
+  <div class="download-bar">
+    <p>Book of Abstracts</p>
+    <a href="assets/BoA MQT2024_final.pdf" target="_blank">⬇ Download PDF</a>
+  </div>
+
+  <div class="week-section">
+    <img src="assets/MQT 2024 week.png" alt="MQT 2024 Week Schedule Overview">
+  </div>
+
+  <section class="schedule-section">
+    <div class="container">
+
+      <div class="day-tabs">
+        <button class="day-tab active" onclick="showDay('monday', this)">Monday 16</button>
+        <button class="day-tab" onclick="showDay('tuesday', this)">Tuesday 17</button>
+        <button class="day-tab" onclick="showDay('wednesday', this)">Wednesday 18</button>
+        <button class="day-tab" onclick="showDay('thursday', this)">Thursday 19</button>
+        <button class="day-tab" onclick="showDay('friday', this)">Friday 20</button>
+        <button class="day-tab" onclick="showDay('posters', this)">Posters</button>
+      </div>
+
+      <!-- MONDAY -->
+      <div class="day-panel active" id="day-monday">
+        <div class="schedule-item">
+          <div class="schedule-time">08:30 – 09:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title">MQT Opening</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">09:00 – 09:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">A quantum analog of Huygens's clock: noise-induced spontaneous
+                synchronization</a></div>
+            <div class="schedule-speaker"><a href="#">Eric Bittner</a>, University of Houston</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">09:40 – 10:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Towards molecular controlled magnonics</a></div>
+            <div class="schedule-speaker"><a href="#">José J. Baldoví</a></div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">10:00 – 10:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Entangled Photon Generation with Metal-Organic Frameworks</a></div>
+            <div class="schedule-speaker"><a href="#">Yamil J. Colón</a>, University of Notre Dame</div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-break">
+          <div class="schedule-time">10:40 – 11:20</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Coffee Break</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">11:20 – 12:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Polyatomic ultralong-range Rydberg molecules: Electronic structure
+                and Rydberg blockade</a></div>
+            <div class="schedule-speaker"><a href="#">Rosario González-Férez</a>, Universidad de Granada</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">12:00 – 12:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Advancing phase space and matrix product state methods for
+                cavity-coupled molecules</a></div>
+            <div class="schedule-speaker"><a href="#">Johannes Schachenmayer</a>, University of Strasbourg</div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-break">
+          <div class="schedule-time">12:40 – 14:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Lunch Break</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">14:00 – 14:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Strong light-matter coupling: from self-hybridized polaritons to
+                Casimir self-assembly</a></div>
+            <div class="schedule-speaker"><a href="#">Timur Shegai</a>, Chalmers University</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">14:40 – 15:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Multiplexing Quantum Biosensing with DNA-Functionalized Diamond
+                Surfaces</a></div>
+            <div class="schedule-speaker"><a href="#">Ignacio Chi-Durán</a></div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">15:00 – 15:20</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Quantum gates utilizing dark and bright states of molecules in
+                dissipative cavities</a></div>
+            <div class="schedule-speaker"><a href="#">Alexey Belyanin</a></div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-special">
+          <div class="schedule-time">15:30 – 18:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Poster Session</div>
+            <div class="schedule-speaker" style="color:var(--gold)">Prizes sponsored by Philosophical Magazine Part C,
+              The Journal of Chemical Physics and APL Quantum</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TUESDAY -->
+      <div class="day-panel" id="day-tuesday">
+        <div class="schedule-item">
+          <div class="schedule-time">09:00 – 09:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Circuit QED with Molecular Spin Qudits</a></div>
+            <div class="schedule-speaker"><a href="#">Fernando Luis</a>, University of Zaragoza</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">09:40 – 10:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Atomistic Decoherence of Molecular Spin Qubits</a></div>
+            <div class="schedule-speaker"><a href="#">Katy Aruachan</a></div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">10:00 – 10:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Mapping Decoherence Pathways in Molecules</a></div>
+            <div class="schedule-speaker"><a href="#">Ignacio Franco</a>, University of Rochester</div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-break">
+          <div class="schedule-time">10:40 – 11:20</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Coffee Break</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">11:20 – 12:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">The short life and times of vibrational polaritons</a></div>
+            <div class="schedule-speaker"><a href="#">Jeffrey Owrutsky</a>, U.S. Naval Research Laboratory</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">12:00 – 12:20</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Multiphoton dressed Rydberg excitations in a room temperature
+                microwave cavity with ultracold Rb atoms</a></div>
+            <div class="schedule-speaker"><a href="#">Luis Marcassa</a></div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">12:20 – 12:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Modification of hot carrier spectra in plasmon-molecule systems by
+                optoelectronic strong coupling</a></div>
+            <div class="schedule-speaker"><a href="#">Tomasz Antosiewicz</a></div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-break">
+          <div class="schedule-time">12:40 – 14:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Group Picture & Lunch Break</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">14:00 – 14:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">New frontiers in quantum simulation with dipolar gases</a></div>
+            <div class="schedule-speaker"><a href="#">Ana María Rey</a>, University of Colorado Boulder & JILA</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">14:40 – 15:20</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Creating and exploring Bose-Einstein condensates of dipolar
+                molecules</a></div>
+            <div class="schedule-speaker"><a href="#">Sebastian Will</a>, Columbia University</div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-break">
+          <div class="schedule-time">15:20 – 16:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Coffee Break</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">16:00 – 16:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Quantum effects in controlled molecular dynamics</a></div>
+            <div class="schedule-speaker"><a href="#">Christiane Koch</a>, Freie Universität Berlin</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">16:40 – 17:20</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Role of Delocalization to Polariton Chemistry</a></div>
+            <div class="schedule-speaker"><a href="#">Wei Xiong</a>, University of California San Diego</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">17:20 – 17:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Materials Design through Quantum Mechanical Coupling</a></div>
+            <div class="schedule-speaker"><a href="#">Blake Simpkins</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WEDNESDAY -->
+      <div class="day-panel" id="day-wednesday">
+        <div class="schedule-item schedule-special" style="padding:2rem 1rem;">
+          <div class="schedule-time">08:00 – 18:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title" style="font-size:1.2rem">MQT Group Excursion</div>
+            <div class="schedule-speaker" style="color:var(--gold); margin-top:0.5rem;">Full-day excursion in the
+              Chilean Patagonia</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- THURSDAY -->
+      <div class="day-panel" id="day-thursday">
+        <div class="schedule-item">
+          <div class="schedule-time">09:00 – 09:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Tunable Spin Dynamics with Ultracold Polar Molecules</a></div>
+            <div class="schedule-speaker"><a href="#">Annette Carroll</a>, University of Colorado Boulder</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">09:40 – 10:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Non-canonical steady state of two coupled oscillators in the strong
+                coupling regime</a></div>
+            <div class="schedule-speaker"><a href="#">Felipe Recabal</a></div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">10:00 – 10:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Towards quantum control of complex cold molecules inside a
+                cavity</a></div>
+            <div class="schedule-speaker"><a href="#">Giacomo Valtolina</a>, Fritz-Haber Institute</div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-break">
+          <div class="schedule-time">10:40 – 11:20</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Coffee Break</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">11:20 – 12:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Organic Molecules in Solids for Photonic Quantum Technologies</a>
+            </div>
+            <div class="schedule-speaker"><a href="#">Costanza Toninelli</a>, University of Florence</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">12:00 – 12:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Impact of system-bath coupling on a quantum system's steady
+                state</a></div>
+            <div class="schedule-speaker"><a href="#">Janet Anders</a>, University of Potsdam & University of Exeter
+            </div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-break">
+          <div class="schedule-time">12:40 – 14:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Lunch Break</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">14:00 – 14:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Plasmonic Platforms for Polaritonic Chemistry</a></div>
+            <div class="schedule-speaker"><a href="#">Matthew Sheldon</a>, University of California Irvine</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">14:40 – 15:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">High-Symmetry Lanthanide Complexes as Clock-Transition Qubits</a>
+            </div>
+            <div class="schedule-speaker"><a href="#">Michael Shatruk</a></div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">15:00 – 15:20</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Variational Quantum Eigensolver for Estimating the Equilibrium
+                Configuration of Molecules</a></div>
+            <div class="schedule-speaker"><a href="#">Herbert Díaz</a></div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-break">
+          <div class="schedule-time">15:20 – 16:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Coffee Break</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">16:00 – 16:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">A Tale of Two Methods for Simulating Molecular Polaritons</a></div>
+            <div class="schedule-speaker"><a href="#">Tao Li</a>, University of Delaware</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">16:40 – 17:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Variational approach to atom-membrane dynamics</a></div>
+            <div class="schedule-speaker"><a href="#">Dennis Clougherty</a></div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">17:00 – 17:20</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Modelling Light-Matter Interactions with Atomic Resolution</a></div>
+            <div class="schedule-speaker"><a href="#">Ruth Tichauer</a></div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-special">
+          <div class="schedule-time">18:30 – 20:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Conference Dinner</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FRIDAY -->
+      <div class="day-panel" id="day-friday">
+        <div class="schedule-item">
+          <div class="schedule-time">09:00 – 09:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Quantum ergodicity and energy flow in molecules</a></div>
+            <div class="schedule-speaker"><a href="#">David Leitner</a>, University of Nevada Reno</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">09:40 – 10:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">From Ultracold Molecules to Quantum Computing: Collisions Under
+                Quantum Control</a></div>
+            <div class="schedule-speaker"><a href="#">Micheline Soley</a></div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">10:00 – 10:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Quantum vibrational nano-imaging: a molecular ruler to image
+                structure, coupling, and disorder in molecular materials</a></div>
+            <div class="schedule-speaker"><a href="#">Markus Raschke</a>, University of Colorado Boulder & JILA</div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-break">
+          <div class="schedule-time">10:40 – 11:20</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Coffee Break</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">11:20 – 12:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Detecting Collective Molecular Vibrations with Surface-Enhanced
+                Raman Spectroscopy</a></div>
+            <div class="schedule-speaker"><a href="#">Niclas Mueller</a>, Fritz-Haber Institute</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">12:00 – 12:20</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">Ultrafast photodynamics of molecular polaritons analyzed with
+                nonlinear multidimensional spectroscopies</a></div>
+            <div class="schedule-speaker"><a href="#">José Luis Sanz-Vicario</a></div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">12:20 – 12:40</div>
+          <div class="schedule-body">
+            <div class="schedule-title"><a href="#">New Experimental Platforms for Molecular Polaritonics</a></div>
+            <div class="schedule-speaker"><a href="#">Marissa Weichman</a>, Princeton University</div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-break">
+          <div class="schedule-time">12:40 – 14:00</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Lunch Break</div>
+          </div>
+        </div>
+        <div class="schedule-item schedule-special">
+          <div class="schedule-time">14:00 – 14:20</div>
+          <div class="schedule-body">
+            <div class="schedule-title">Departure Ceremony</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- POSTERS -->
+      <div class="day-panel" id="day-posters">
+        <span class="poster-label">Monday Poster Session — 15:30 to 18:00</span>
+        <div class="poster-item">
+          <div class="poster-num">P1</div>
+          <div>
+            <div class="poster-title"><a href="#">The electromagnetic vacuum enhances infrared photodissociation under
+                strong light-matter coupling</a></div>
+            <div class="poster-author">Johan Triana</div>
+          </div>
+        </div>
+        <div class="poster-item">
+          <div class="poster-num">P2</div>
+          <div>
+            <div class="poster-title"><a href="#">Manipulating the light-matter coupling of a plasmonic nanosphere and a
+                dipole emitter with laser fields</a></div>
+            <div class="poster-author">Athul S. Rema</div>
+          </div>
+        </div>
+        <div class="poster-item">
+          <div class="poster-num">P3</div>
+          <div>
+            <div class="poster-title"><a href="#">Non-Unitarity Maximizing Unraveling of Open Quantum Dynamics</a></div>
+            <div class="poster-author">Ruben Daraban</div>
+          </div>
+        </div>
+        <div class="poster-item">
+          <div class="poster-num">P4</div>
+          <div>
+            <div class="poster-title"><a href="#">One-dimensional Bose Polarons across harmonically confined optical
+                lattices</a></div>
+            <div class="poster-author">Felipe Isaule</div>
+          </div>
+        </div>
+        <div class="poster-item">
+          <div class="poster-num">P5</div>
+          <div>
+            <div class="poster-title"><a href="#">Computational discovery and characterization of MOFs for chemical
+                sensors coupled with fiber optics</a></div>
+            <div class="poster-author">Rubén Fritz</div>
+          </div>
+        </div>
+        <div class="poster-item">
+          <div class="poster-num">P6</div>
+          <div>
+            <div class="poster-title"><a href="#">Isomerization reactions in quantum computers</a></div>
+            <div class="poster-author">Joaquin Molina</div>
+          </div>
+        </div>
+        <div class="poster-item">
+          <div class="poster-num">P7</div>
+          <div>
+            <div class="poster-title"><a href="#">Ultracold long-range Van der Waals Rydberg trimers</a></div>
+            <div class="poster-author">Mateo Londoño</div>
+          </div>
+        </div>
+        <div class="poster-item">
+          <div class="poster-num">P8</div>
+          <div>
+            <div class="poster-title"><a href="#">Stochastic resonant behaviours and steady state control in harmonic
+                systems</a></div>
+            <div class="poster-author">Adrian Rubio</div>
+          </div>
+        </div>
+        <div class="poster-item">
+          <div class="poster-num">P9</div>
+          <div>
+            <div class="poster-title"><a href="#">Diamond-based quantum sensing for free radical detection in cells and
+                tissues</a></div>
+            <div class="poster-author">Claudia Reyes</div>
+          </div>
+        </div>
+        <div class="poster-item">
+          <div class="poster-num">P10</div>
+          <div>
+            <div class="poster-title"><a href="#">Nonlinear semiclassical spectroscopy of ultrafast molecular polariton
+                dynamics</a></div>
+            <div class="poster-author">Michael Reitz</div>
+          </div>
+        </div>
+        <div class="poster-item">
+          <div class="poster-num">P11</div>
+          <div>
+            <div class="poster-title"><a href="#">Effects of Different Noise Environments on the Coherence Time of Open
+                Quantum Systems</a></div>
+            <div class="poster-author">Pietro de Checchi</div>
+          </div>
+        </div>
+        <div class="poster-item">
+          <div class="poster-num">P12</div>
+          <div>
+            <div class="poster-title"><a href="#">Impact of Cavity Length Non-Uniformity on Reaction Rate Extraction in
+                Strong Coupling Experiments</a></div>
+            <div class="poster-author">Michael Michon</div>
+          </div>
+        </div>
+        <div class="poster-item">
+          <div class="poster-num">P13</div>
+          <div>
+            <div class="poster-title"><a href="#">Sum-Frequency Spectro-Microscopy to Image Infrared Materials
+                Excitations</a></div>
+            <div class="poster-author">Niclas Mueller</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    </div>
+  </main>
+
+  <footer id="footer-container"></footer>
+  <script>
+    function showDay(day, btn) {
+      document.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
+      document.getElementById('day-' + day).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration – MQT 2024</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">MQT 2024</a>
+  <ul class="nav-links">
+    <li><a href="program.html">Program</a></li>
+    <li><a href="speakers.html">Speakers</a></li>
+    <li><a href="location.html">Location</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Past Events ▾</a>
+      <div class="dropdown-menu">
+        <a href="https://mqt2022.org" target="_blank">MQT 2022</a>
+        <a href="http://mqt2019.org" target="_blank">MQT 2019</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <div class="section-label">MQT 2024</div>
+  <h1 class="page-title">Registration</h1>
+  <div class="section-divider"></div>
+</div>
+
+<!-- DEADLINES BANNER -->
+<div class="deadlines-banner">
+  <div class="deadlines-inner">
+    <div class="deadline-item">
+      <div class="deadline-item-label">Poster submission deadline</div>
+      <div class="deadline-item-date">October 25th, 2024</div>
+    </div>
+    <div class="deadline-sep"></div>
+    <div class="deadline-item">
+      <div class="deadline-item-label">Registration deadline</div>
+      <div class="deadline-item-date">November 11th, 2024</div>
+    </div>
+  </div>
+</div>
+
+<!-- FEES -->
+<section class="fees-section">
+  <div class="container">
+    <span class="block-label">Registration Fees</span>
+    <h2 class="block-title">Choose your category</h2>
+    <div class="block-divider"></div>
+
+    <div class="fee-cards">
+      <div class="fee-card">
+        <div class="fee-category">Academic Faculty</div>
+        <div class="fee-amount">250</div>
+        <div class="fee-currency">USD</div>
+      </div>
+      <div class="fee-card">
+        <div class="fee-category">Non-Academic Researcher</div>
+        <div class="fee-amount">250</div>
+        <div class="fee-currency">USD</div>
+      </div>
+      <div class="fee-card">
+        <div class="fee-category">Postdoctoral Researcher</div>
+        <div class="fee-amount">200</div>
+        <div class="fee-currency">USD</div>
+      </div>
+      <div class="fee-card highlight">
+        <div class="fee-category">Student</div>
+        <div class="fee-amount">100</div>
+        <div class="fee-currency">USD</div>
+      </div>
+      <div class="fee-card">
+        <div class="fee-category">Industry</div>
+        <div class="fee-amount">400</div>
+        <div class="fee-currency">USD</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section" id="register">
+  <div class="container">
+    <div class="reg-layout">
+      <!-- INFO COLUMN -->
+      <div>
+        <span class="block-label">How to register</span>
+        <h2 class="block-title">Sign up</h2>
+        <div class="block-divider"></div>
+        <div class="reg-info">
+          <p>Complete the registration form with your personal and institutional information. Select your participation category and confirm your attendance to the conference dinner if applicable.</p>
+          <p>Payment instructions will be sent by email after your registration is received. Please ensure your institutional email is correct.</p>
+          <p>For questions about registration, contact the organizing committee at <a href="mailto:mqt2024@usach.cl">mqt2024@usach.cl</a>.</p>
+        </div>
+        <div class="reg-note">
+          <strong>⚠ Deadline</strong>
+          Registration closes on <strong>November 11th, 2024</strong>. Poster submission deadline is <strong>October 25th, 2024</strong>.
+        </div>
+      </div>
+
+      <!-- FORM COLUMN -->
+      <div class="reg-form" id="reg-form-wrap">
+        <form id="regForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" placeholder="Smith" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Institutional email</label>
+            <input type="email" id="email" placeholder="j.smith@university.edu" required>
+          </div>
+
+          <div class="form-group">
+            <label for="institution">Institution / Affiliation</label>
+            <input type="text" id="institution" placeholder="University of…" required>
+          </div>
+
+          <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" id="country" placeholder="Chile" required>
+          </div>
+
+          <div class="form-group">
+            <label for="category">Participation category</label>
+            <select id="category" required>
+              <option value="" disabled selected>Select category…</option>
+              <option value="faculty">Academic Faculty — 250 USD</option>
+              <option value="non-academic">Non-Academic Researcher — 250 USD</option>
+              <option value="postdoc">Postdoctoral Researcher — 200 USD</option>
+              <option value="student">Student — 100 USD</option>
+              <option value="industry">Industry — 400 USD</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="poster-title">Poster title (optional)</label>
+            <input type="text" id="poster-title" placeholder="Leave blank if not presenting a poster">
+          </div>
+
+          <div class="form-group">
+            <label for="dietary">Dietary requirements</label>
+            <input type="text" id="dietary" placeholder="Vegetarian, gluten-free, etc.">
+          </div>
+
+          <div class="form-group">
+            <label for="comments">Additional comments</label>
+            <textarea id="comments" placeholder="Anything else you'd like us to know…"></textarea>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="dinner" name="dinner">
+            <label for="dinner">I plan to attend the conference dinner (Thursday 19, 18:30–20:00)</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the registration terms and understand that fees are non-refundable after November 11th, 2024.</label>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn-primary">Submit Registration →</button>
+          </div>
+          <p class="form-disclaimer">Your information will only be used for MQT 2024 organization purposes.</p>
+        </form>
+
+        <div class="form-success" id="form-success">
+          <div class="check">✓</div>
+          <h3>Registration received!</h3>
+          <p>Thank you for registering. You'll receive a confirmation email within 48 hours with payment instructions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© MQT 2024 — Puerto Varas, Chile</span>
+  <span><a href="https://mqt2022.org" target="_blank">MQT 2022</a> &nbsp;·&nbsp; <a href="http://mqt2019.org" target="_blank">MQT 2019</a></span>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById('regForm').style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  }
+</script>
+</body>
+</html>
