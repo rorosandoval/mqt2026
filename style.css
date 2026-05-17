@@ -6,7 +6,6 @@
   padding: 0;
 }
 
-
 :root {
   --navy: #1e3c54;
   --blue: #3354a1;
@@ -15,7 +14,6 @@
   --mint: #75c19a;
   --mint-pale: #e3f3eb;
   --border: rgba(30, 60, 84, 0.15);
-
   --ff-noto: "Noto Sans", sans-serif;
 }
 
@@ -36,10 +34,6 @@ a {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-
-/* ============================================================
-   NAVIGATION
-   ============================================================ */
 
 nav {
   position: fixed;
@@ -124,7 +118,6 @@ nav {
   background: var(--mint);
 }
 
-/* --- NUEVO: Botón Hamburguesa oculto en desktop --- */
 .nav-toggle {
   display: none;
   background: none;
@@ -134,29 +127,25 @@ nav {
 }
 
 .nav-toggle svg {
-  fill: var(--white); /* Relleno blanco para contrastar con tu fondo navy */
+  fill: var(--white);
 }
 
-/* ============================================================ 
-   ADAPTACIÓN PARA MOBILE (Pantallas menores a 768px)
-============================================================ */
 @media (max-width: 768px) {
   nav {
-    padding: 0 1.5rem; /* Menos espacio en los bordes en celulares */
+    padding: 0 1.5rem;
   }
 
   .nav-toggle {
-    display: block; /* Muestra el botón de tres líneas */
+    display: block;
   }
 
-  /* Tu menú de enlaces ahora se despliega como cortina vertical */
   .nav-links {
     position: absolute;
-    top: 80px; /* Justo debajo de los 80px de alto de tu nav */
-    right: -100%; /* Escondido a la derecha por defecto */
+    top: 80px;
+    right: -100%;
     width: 260px;
-    height: calc(100vh - 80px); /* Alto dinámico de pantalla */
-    background: var(--navy); /* Mantiene tu fondo oscuro original */
+    height: calc(100vh - 80px);
+    background: var(--navy);
     border-left: 1px solid var(--border);
     flex-direction: column;
     align-items: flex-start;
@@ -166,12 +155,10 @@ nav {
     box-shadow: -8px 8px 24px rgba(0, 0, 0, 0.15);
   }
 
-  /* Clase que activa el JS al hacer click en la hamburguesa */
   .nav-links.active {
     right: 0;
   }
 
-  /* Ajuste para que el submenú de eventos pasados no flote en mobile */
   .nav-dropdown {
     width: 100%;
   }
@@ -181,7 +168,7 @@ nav {
     top: 0;
     right: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.05); /* Fondo sutil transparente para celular */
+    background: rgba(255, 255, 255, 0.05);
     box-shadow: none;
     border: none;
     margin-top: 0.5rem;
@@ -189,19 +176,15 @@ nav {
   }
 
   .dropdown-menu a {
-    color: var(--white); /* En mobile se lee mejor en blanco */
+    color: var(--white);
     padding: 0.6rem 1rem;
   }
-  
+
   .dropdown-menu a:hover {
     background: transparent;
     color: var(--mint);
   }
 }
-
-/* ============================================================
-   SHARED LAYOUT UTILITIES
-   ============================================================ */
 
 .container {
   max-width: 1200px;
@@ -242,10 +225,6 @@ nav {
   margin-right: auto;
 }
 
-/* ============================================================
-   PAGE HEADER (inner pages)
-   ============================================================ */
-
 .page-header {
   padding: 9rem 2rem 4rem;
   text-align: center;
@@ -260,10 +239,6 @@ nav {
   line-height: 1.1;
   color: var(--navy);
 }
-
-/* ============================================================
-   FOOTER
-   ============================================================ */
 
 footer {
   border-top: 1px solid var(--border);
@@ -294,26 +269,16 @@ footer .footer-title {
   margin-bottom: 1.5rem;
 }
 
-/* ============================================================
-   FADE-IN ANIMATION
-   ============================================================ */
-
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* ============================================================
-   INDEX — HERO
-   ============================================================ */
 
 .hero {
   position: relative;
@@ -331,11 +296,7 @@ footer .footer-title {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(
-      ellipse 60% 50% at 50% 60%,
-      rgba(30, 60, 84, 0.07) 0%,
-      transparent 70%
-    ),
+    radial-gradient(ellipse 60% 50% at 50% 60%, rgba(30, 60, 84, 0.07) 0%, transparent 70%),
     linear-gradient(180deg, var(--white) 0%, var(--white) 100%);
 }
 
@@ -417,10 +378,6 @@ footer .footer-title {
   display: block;
 }
 
-/* ============================================================
-   INDEX — ABOUT
-   ============================================================ */
-
 .about-section {
   padding: 6rem 2rem;
   background: var(--white);
@@ -456,10 +413,6 @@ footer .footer-title {
   color: var(--navy);
   text-decoration: underline;
 }
-
-/* ============================================================
-   INDEX — VENUE
-   ============================================================ */
 
 .venue-section {
   padding: 6rem 2rem;
@@ -512,10 +465,6 @@ footer .footer-title {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-
-/* ============================================================
-   INDEX — DATES
-   ============================================================ */
 
 .dates-section {
   padding: 6rem 2rem;
@@ -575,10 +524,6 @@ footer .footer-title {
   font-weight: 500;
 }
 
-/* ============================================================
-   INDEX — FEES
-   ============================================================ */
-
 .fees-section {
   padding: 6rem 2rem;
 }
@@ -632,10 +577,6 @@ footer .footer-title {
   font-weight: 500;
 }
 
-/* ============================================================
-   INDEX — SPONSORS
-   ============================================================ */
-
 .sponsors-section {
   padding: 6rem 2rem;
   background: var(--white);
@@ -654,19 +595,13 @@ footer .footer-title {
   height: 100px;
   width: auto;
   object-fit: contain;
-  transition:
-    opacity 0.2s,
-    filter 0.2s;
+  transition: opacity 0.2s, filter 0.2s;
 }
 
 .sponsor-item img:hover {
   opacity: 0.85;
   filter: grayscale(0.3);
 }
-
-/* ============================================================
-   PROGRAM — DOWNLOAD BAR
-   ============================================================ */
 
 .download-bar {
   background: var(--blue);
@@ -704,10 +639,6 @@ footer .footer-title {
   opacity: 0.85;
 }
 
-/* ============================================================
-   PROGRAM — WEEK IMAGE
-   ============================================================ */
-
 .week-section {
   padding: 4rem 2rem;
   text-align: center;
@@ -719,10 +650,6 @@ footer .footer-title {
   border: 1px solid var(--border);
   border-radius: 4px;
 }
-
-/* ============================================================
-   PROGRAM — DAY TABS
-   ============================================================ */
 
 .schedule-section {
   padding: 2rem 2rem 6rem;
@@ -746,9 +673,7 @@ footer .footer-title {
   border-bottom: 2px solid transparent;
   margin-bottom: -2px;
   white-space: nowrap;
-  transition:
-    color 0.2s,
-    border-color 0.2s;
+  transition: color 0.2s, border-color 0.2s;
   background: none;
   border-top: none;
   border-left: none;
@@ -772,10 +697,6 @@ footer .footer-title {
 .day-panel.active {
   display: block;
 }
-
-/* ============================================================
-   PROGRAM — SCHEDULE ITEMS
-   ============================================================ */
 
 .schedule-item {
   display: grid;
@@ -854,10 +775,6 @@ footer .footer-title {
   font-style: italic;
 }
 
-/* ============================================================
-   PROGRAM — POSTERS
-   ============================================================ */
-
 .poster-label {
   font-family: var(--ff-noto);
   font-size: 11px;
@@ -903,10 +820,6 @@ footer .footer-title {
   margin-top: 0.15rem;
 }
 
-/* ============================================================
-   SPEAKERS — INVITED GRID
-   ============================================================ */
-
 .speakers-section {
   padding: 5rem 2rem;
 }
@@ -941,10 +854,6 @@ footer .footer-title {
   color: var(--violet);
   margin-top: 0.2rem;
 }
-
-/* ============================================================
-   SPEAKERS — ORGANIZERS
-   ============================================================ */
 
 .organizers-section {
   padding: 5rem 2rem;
@@ -1008,10 +917,6 @@ footer .footer-title {
   line-height: 1.4;
 }
 
-/* ============================================================
-   LOCATION — MAP & INFO
-   ============================================================ */
-
 .content-section {
   padding: 5rem 2rem;
 }
@@ -1024,7 +929,6 @@ footer .footer-title {
   gap: 2rem;
   border-radius: 4px;
   overflow: hidden;
-  /* border: 1px solid var(--border); */
   margin-bottom: 2rem;
 }
 
@@ -1095,10 +999,6 @@ footer .footer-title {
   line-height: 1.6;
 }
 
-/* ============================================================
-   LOCATION — FLIGHTS
-   ============================================================ */
-
 .flights-section {
   padding: 2rem 2rem;
   background: var(--white);
@@ -1164,10 +1064,6 @@ footer .footer-title {
   border-radius: 3px;
 }
 
-/* ============================================================
-   REGISTRATION — DEADLINES BANNER
-   ============================================================ */
-
 .deadlines-banner {
   background: var(--blue);
   color: var(--white);
@@ -1208,10 +1104,6 @@ footer .footer-title {
   background: rgba(255, 255, 255, 0.2);
   align-self: stretch;
 }
-
-/* ============================================================
-   REGISTRATION — FEE CARDS
-   ============================================================ */
 
 .fees-cards-section {
   padding: 5rem 2rem;
@@ -1275,10 +1167,6 @@ footer .footer-title {
   color: var(--violet);
   margin-top: 0.3rem;
 }
-
-/* ============================================================
-   REGISTRATION — FORM
-   ============================================================ */
 
 .form-section {
   padding: 5rem 2rem;
@@ -1447,10 +1335,6 @@ footer .footer-title {
   color: var(--blue);
 }
 
-/* ============================================================
-   INTERVIEWS
-   ============================================================ */
-
 .interviews-section {
   padding: 60px 0;
 }
@@ -1473,10 +1357,7 @@ footer .footer-title {
   text-decoration: none;
   color: inherit;
   position: relative;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   overflow: hidden;
 }
 
@@ -1542,19 +1423,7 @@ footer .footer-title {
   color: var(--navy);
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
-
 @media (max-width: 700px) {
-  nav {
-    padding: 0 1.25rem;
-  }
-
-  .nav-links {
-    gap: 1rem;
-  }
-
   .about-grid,
   .dates-grid,
   .info-grid {
